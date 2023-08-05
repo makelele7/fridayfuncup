@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover, orientation=landscape">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Friday Fun Cup</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/min-667.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="apple-touch-icon" href="path/to/icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=REM:wght@100;200;300;400;500;600;700;800;900&family=Saira:wght@100;200;300;400;500;600;700;800;900&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+
+</head>
+<body>
+    <nav class="navigation">
+        <ul>
+            <li><a href="#" class="animate-icon"><i class="fas fa-user"></i></a></li>
+            <li><a href="#" class="animate-icon"><i class="fas fa-trophy"></i></a></li>
+            <li><a href="#" class="animate-icon"><i class="fas fa-chart-bar"></i></a></li>
+            <li><a href="#" class="animate-icon"><i class="fas fa-star"></i></a></li>
+        </ul>
+    </nav>
+    
+    <div class="content">
+        <div class="content-edit">
+            <i class="fa-regular fa-pen-to-square"></i>
+        </div>
+
+        <div class="team-profile">
+
+            <img src="pics/bsc.png" />
+
+        <!--<div class="profile-picture">
+                <i class="fas fa-user"></i>
+            </div>-->
+            <h1>FC Bottinger</h1>
+            <h10>Founded: 15.02.2011</h10>
+      
+            <h4>PerCenT_GER & crispybaked</h4>
+            <div class="team-stats">
+                <div class="team-stats-item"><h3>2</h3><i class="fa-solid fa-trophy"></i></div>
+                <div class="team-stats-item"><h3>47-12</h3><i class="fa-solid fa-chart-simple"></i></div>
+                <div class="team-stats-item"><h3>+34</h3><i class="fa-regular fa-futbol"></i></div>
+            </div>
+            
+            <div class="team-latest-matches">
+                <table id="myTable">
+                    <tr>
+                        <td>#00056</td>
+                        <td>04.08.2023</td>
+                        <td>Wadenkrampf SC</td>
+                        <td>3-0</td>
+                        <td>win</td>
+                    </tr>
+                    <tr>
+                        <td>#00056</td>
+                        <td>03.08.2023</td>
+                        <td>SpVgg Donnerwetter</td>
+                        <td>2-3</td>
+                        <td>lose</td>
+                    </tr>
+                    <tr>
+                        <td>#00056</td>
+                        <td>03.08.2023</td>
+                        <td>SpVgg Donnerwetter</td>
+                        <td>2-0</td>
+                        <td>win</td>
+                    </tr>
+                    <tr>
+                        <td>#00056</td>
+                        <td>03.08.2023</td>
+                        <td>SpVgg Donnerwetter</td>
+                        <td>4-0</td>
+                        <td>win</td>
+                    </tr>
+                </table>
+                <a href="#">More matches...</a>
+                <script>
+                    var table = document.getElementById("myTable");
+                    var rows = table.getElementsByTagName("tr");
+                  
+                    for (var i = 0; i < rows.length; i++) {
+                      var cells = rows[i].getElementsByTagName("td");
+                      var result = cells[4].textContent.trim();
+                  
+                      if (result === "win") {
+                        cells[3].classList.add("win-text");
+                      } else if (result === "lose") {
+                        cells[3].classList.add("lose-text");
+                      }
+                    }
+                  </script>
+
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script src="hide-browser-elements.js"></script>
+<script src="js/main.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/countdown.js"></script>
+</html>

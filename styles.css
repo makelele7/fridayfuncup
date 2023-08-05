@@ -1,0 +1,262 @@
+:root{
+    --accent-color: rgb(185, 80, 211);
+    --accent-color2: rgb(56, 183, 233);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+::-webkit-scrollbar-track {
+    background-image: linear-gradient(180deg, #4158D0 0%, #C850C0 30%, #FFCC70 66%, #f0d01e 100%);
+  }
+
+::-webkit-scrollbar-thumb {
+    background-color:  rgb(185, 80, 211);
+  }
+
+::-webkit-scrollbar-thumb:hover {
+    background-color:  rgb(56, 183, 233);
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+   /* background-image:url("background.jpg");
+    background-attachment: fixed;
+    background-size: cover;*/
+    font-family: 'Chakra Petch', sans-serif;
+    color: rgb(20,20,30);
+}
+
+h1{
+    font-size: 24px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+h4{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+}
+
+h5{
+    font-size: 12px;
+    font-weight: 300;
+    margin: 5px 0 0 20px;
+    font-style: italic;
+}
+
+h6{
+    font-size: 16px;
+    margin: 0;
+    text-decoration: underline;
+}
+
+.navigation {
+    z-index: 999;
+    font-size: 22px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: var(--accent-color);
+    padding: 10px 20px;
+    display: block;
+}
+
+.content {
+    margin: 0;
+}
+
+.content-edit{
+    color: var(--accent-color);
+    text-align: right;
+    margin-right: 30px;
+    font-size: 24px;
+}
+
+
+/* TEAM PROFILE ********************************************************************************/
+
+h10{
+    font-weight: 300;
+    font-size: 12px;
+    margin: 0 0 20px 0;
+}
+
+.team-profile{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-profile img{
+    width: 200px;
+    height: auto;
+}
+
+.profile-picture{
+    display: table;
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+    background-color: rgb(0,0,0,.2);
+    font-size: 60px;
+    color: rgb(0,0,0,.2);
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 0 10px 0;
+}
+
+.profile-picture i{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.team-stats{
+    padding: 20px 0 20px 0;
+    font-weight: 100;
+    border-top: 1px dotted #ccc;
+    margin: 20px 0 0 0;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.team-stats-item{
+    min-width: 100px;
+    text-align: center;
+    padding: 10px 0 15px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+    -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+}
+
+.team-stats-item i{
+    margin: 5px 0 0 0;
+    font-size: 24px;
+    border-top: 1px solid #757575;
+    padding-top: 10px;
+}
+
+.team-latest-matches{
+    border-top: 1px dotted #ccc;
+    margin: 0;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.team-latest-matches table td{
+    padding: 3px 10px;
+}
+
+.win-text,
+.lose-text,
+.team-latest-matches table td:nth-child(1){
+    font-weight: 700;
+}
+
+.team-latest-matches table td:nth-child(5){
+    display: none;
+}
+
+.team-latest-matches table tr{
+    border-top: 1px dotted #ccc;
+}
+
+.win-text{
+    color: #55a155;
+}
+
+.lose-text {
+    color: #c94040;
+}
+
+
+
+/* TOURNAMENTS ********************************************************************************/
+
+.tournament{
+    position: relative;
+    height: 176px;
+    padding: 0;
+}
+
+.tournament-title{
+    text-shadow: 10px 10px 10px 10px white;
+    position: absolute;
+    margin: 40px 0 0 30px;
+}
+
+.tournament-title h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.tournament-title span {
+    line-height: 40px;
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+.tournament-title h1, h4 {
+    text-shadow: 5px 2px 10px black;
+}
+
+.ffc {
+    background-image:url("pics/ffc.png");
+    background-size: cover;
+    color: white;
+    height: 176px;
+}
+
+.tournament-info {
+    padding: 30px;
+}
+
+.registered-teams ol li{
+    padding: 5px 10px;
+}
+
+.registered-teams ol li:nth-child(2n){
+    background-color: rgb(235, 235, 235);
+}
+
+.registered-teams ol li img {
+    vertical-align: middle;
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.registered-teams ol li span{
+    vertical-align: middle;
+}
